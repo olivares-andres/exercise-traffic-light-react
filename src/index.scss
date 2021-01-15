@@ -1,0 +1,52 @@
+body {
+  /* Location of the image */
+  background-image: url("./img/lerone-pieters-wroxhvbyAKE-unsplash.jpg");
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+#semaforo {
+  background-color: black;
+  width: 10px;
+  height: 70px;
+  margin-left: 82px;
+}
+
+#semaforo_body {
+  background-color: black;
+  width: 75px;
+  height: 180px;
+  margin-left: 50px;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.light{
+   width: 50px;
+   height: 50px;
+   margin:5px;
+   border-radius:  50px;
+   padding: 4px;
+   cursor: pointer;
+   &.red{background-color: red;} 
+   &.yellow{background-color: #CC6600;}
+   &.green{background-color: #009933;}
+   &.selected{box-shadow: #f8ffcc 0px 0px 50px 20px;}
+}
+
